@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>New Year 2020- Timer counter JavaScript</title>
+</head>
+<body>
+
+<div class="content">
+    <div class="title">
+        <span>Happy NewYear 2020</span>
+    </div>
+
+    <div class="counter">
+        <div class="item">
+            <div id="day">0</div> <hr> <div> Days </div>
+        </div>
+        <div class="item">
+            <div id="hour">0</div> <hr> <div>Hours </div>
+        </div>
+        <div class="item">
+            <div id="minute">0</div> <hr> <div> Minutes </div>
+        </div>
+        <div class="item">
+            <div id="second">0</div> <hr> <div>Seconds </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    let dateNewYear = new Date('Jan 1, 2020 00:00:00').getTime();
+
+    function refreshCounter() {
+        let dateCurrent = new Date().getTime(),
+            timeLeft = dateNewYear - dateCurrent;
+
+        let second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+        let tLDay = zeroPad(Math.floor(timeLeft / day), 3),
+            tLHour = zeroPad(Math.floor((timeLeft % day) / hour), 2),
+            tLMinute = zeroPad(Math.floor((timeLeft % hour) / minute), 2),
+            tLSecond = zeroPad(Math.floor((timeLeft % minute) / second), 2);
+
+        function zeroPad(num, count) {
+            return num.toString().padStart(count, "0");
+        }
+
+
+        document.getElementById("day").innerText = tLDay;
+        document.getElementById("hour").innerText = tLHour;
+        document.getElementById("minute").innerText = tLMinute;
+        document.getElementById("second").innerText = tLSecond;
+    }
+
+    setInterval(() => {
+        refreshCounter();
+    }, 1000);
+
+</script>
+</body>
+</html>
