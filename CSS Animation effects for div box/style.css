@@ -1,18 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height:  100vh;
+    min-height: 100vh;
     background: black;
 }
 
-.square{
+.square {
     position: relative;
     width: 400px;
     height: 400px;
@@ -21,7 +21,7 @@ body{
     align-items: center;
 }
 
-.square span{
+.square span {
     position: absolute;
     top: 0;
     left: 0;
@@ -32,45 +32,45 @@ body{
     transition: 0.5s;
 }
 
-.square span:nth-child(1){
+.square span:nth-child(1) {
     animation: animation-spin 6s linear infinite;
 }
 
-.square span:nth-child(2){
+.square span:nth-child(2) {
     animation: animation-spin 4s linear infinite;
 }
 
-.square span:nth-child(3){
+.square span:nth-child(3) {
 
     animation: animation-spin-reverse 10s linear infinite;
 }
 
 .square:hover span:nth-child(1),
 .square:hover span:nth-child(2),
-.square:hover span:nth-child(3){
+.square:hover span:nth-child(3) {
     border: none;
-    background: rgba(0,0,255,0.8);
+    background: rgba(0, 0, 255, 0.8);
 }
 
 @keyframes animation-spin {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
+    to {
         transform: rotate(360deg);
     }
 }
 
 @keyframes animation-spin-reverse {
-    from{
+    from {
         transform: rotate(360deg);
     }
-    to{
+    to {
         transform: rotate(0deg);
     }
 }
 
-.content{
+.content {
     position: relative;
     padding: 40px 60px;
     color: white;
@@ -79,7 +79,7 @@ body{
     z-index: 1;
 }
 
-.content a{
+.content a {
     position: relative;
     display: inline-block;
     margin-top: 25px;
@@ -91,7 +91,7 @@ body{
     border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
 }
 
-.content a:hover{
+.content a:hover {
     background: white;
     color: #333;
 }

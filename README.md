@@ -2,4 +2,4 @@
 ### UI Elements | UI Элементы
 1. CSS Animation effects for div box #1 | Анимированные эффекты для блока div([download](https://github.com/DorianHub/UI-Elements/tree/master/CSS%20Animation%20effects%20for%20div%20box)) | ([video](https://youtu.be/DbAIUwrk3uA))
 2. Scroll to the top using vanilla JavaScript | Возвращение к верху страницы используя стандартный JS([download](https://github.com/DorianHub/UI-Elements/tree/master/Scroll%20to%20the%20top%20using%20vanilla%20JavaScript)) | ([video](https://youtu.be/_nFuINLMvE8))
-3. New Year 2020- Timer counter JavaScript | Новый Год 2020 - Счетчик времени([download](https://github.com/DorianHub/UI-Elements/tree/master/New%20Year%20-%20Timer%20counter%20JavaScript)) | ([video]())
+3. New Year 2020- Timer counter JavaScript | Новый Год 2020 - Счетчик времени([download](https://github.com/DorianHub/UI-Elements/tree/master/New%20Year%20-%20Timer%20counter%20JavaScript)) | ([video](https://youtu.be/FuOwb6SOP-A))

@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Chilanka;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,40 +14,40 @@ body{
     background: url("bg.png");
 }
 
-.content{
+.content {
     padding: 35px;
-    box-shadow: 50px 50px 50px 50px rgba(0,0,0, 0.5)
+    box-shadow: 50px 50px 50px 50px rgba(0, 0, 0, 0.5)
 }
 
-.title{
+.title {
     color: white;
     font-size: 72px;
     margin-bottom: 20px;
 }
 
-.counter{
+.counter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.counter .item{
+.counter .item {
     margin: 0 15px;
     background: white;
     padding: 10px;
     border-radius: 5px;
 }
 
-.counter .item div{
+.counter .item div {
     line-height: 18px;
     margin: 10px 0;
 }
 
-.counter .item div:first-child{
+.counter .item div:first-child {
     font-size: 32px;
 }
 
-.counter .item div:last-child{
+.counter .item div:last-child {
     font-size: 18px;
     text-transform: lowercase;
 }
